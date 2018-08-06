@@ -33,12 +33,15 @@
   /*--Content boxes--*/
 
   .content-box {
-    max-width: 500px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 30px;
+    border-bottom: dotted;
+    border-bottom-width: 5px;
+    border-color: gainsboro;
   }
 
   .content-box-title {
@@ -51,26 +54,42 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: dotted;
-    border-bottom-width: 5px;
-    border-color: gainsboro;
+    
   }
 
-  .content-box-content > p {
+  .content-box-content>p {
     text-align: justify;
     padding: 20px;
   }
 
+  .text-studies{
+    margin: 20px;
+  }
+  
   /*---Carousel----*/
 
   .mySlides {
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    z-index: -2;
     flex-direction: column;
   }
 
+  .slide-box{
+    max-width: 200px;
+  }
+  .wrap-slide-content{
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-slide-wrap{
+    max-width: 95%;
+    align-self: center;
+  }
+  .img-slide-box{
+    max-width: 95%;
+  }
   /*Carousel animation*/
 
   .w3-animate-zoom {
@@ -86,6 +105,14 @@
     }
   }
 
+  /*--works--*/
+  #works{
+    z-index: -2;
+  }
+
+  .wrap-slide-box{
+    display:none
+  }
   /*--Skills--*/
 
   .skills {
@@ -139,30 +166,27 @@
   @media only screen and (min-width: 320px) {
     .header {
       position: sticky;
+      height: 4em;
     }
-    .content-box{
+    .content-box {
       margin-top: 10px;
     }
-    .content-box-content{
-      padding: 10px;
-    }
-    h2{
+    h2 {
       font-weight: 100;
     }
+
   }
 
   @media only screen and (min-width: 375px) {}
 
-  @media only screen and (min-width: 425px) {
-    
-  }
+  @media only screen and (min-width: 425px) {}
 
   @media only screen and (min-width: 768px) {
-    .header{
+    .header {
       height: 10em;
       position: unset;
     }
-    h2{
+    h2 {
       font-weight: 600;
     }
     .content {
@@ -170,9 +194,9 @@
       align-items: center;
     }
     .content-box-content {
-      justify-content: space-between;
+      max-width: 500px;
     }
-    #who-am-i{
+    #who-am-i {
       order: -1;
     }
   }
@@ -184,9 +208,17 @@
     .content-box-content {
       flex-wrap: wrap;
       justify-content: center;
-      width: 150%;
-
     }
+    .wrap-slide-box{
+      display:flex;
+    }
+    .slide-box{
+      display: none
+    }
+    .content-box-content {
+      max-width: 800px;
+    }
+    
   }
 
   @media only screen and (min-width: 1440px) {
@@ -200,6 +232,9 @@
       font-size: 2em;
     }
     .header {
-      height: 20em;
+      height: 15em;
+    }
+    .content-box-content{
+      max-width: 1500px;
     }
   }
