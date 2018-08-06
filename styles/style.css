@@ -1,0 +1,205 @@
+  @import "fab.css";
+  * {
+    margin: 0px 0px;
+    font-family: Roboto;
+  }
+
+  /* --Header--*/
+
+  .header {
+    top: 0;
+    background-color: #DFE0D4;
+    color: #353940;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("http://dsimple.com/wp-content/uploads/2015/03/network-sphere1.png");
+    background-attachment: fixed;
+    background-position: center -20px;
+  }
+
+  /*--Content---*/
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /*--Content boxes--*/
+
+  .content-box {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .content-box-title {
+    color: #353940;
+    font-weight: 100;
+  }
+
+  .content-box-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: dotted;
+    border-bottom-width: 5px;
+    border-color: gainsboro;
+  }
+
+  .content-box-content > p {
+    text-align: justify;
+    padding: 20px;
+  }
+
+  /*---Carousel----*/
+
+  .mySlides {
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    z-index: -2;
+    flex-direction: column;
+  }
+
+  /*Carousel animation*/
+
+  .w3-animate-zoom {
+    animation: animatezoom 0.6s
+  }
+
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+
+  /*--Skills--*/
+
+  .skills {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap column;
+    width: 7em;
+  }
+
+  .icon {
+    border-radius: 50%;
+    padding: 20px;
+    max-height: 4em;
+  }
+
+  .div-wrap-content-text-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .skill-progress-bar {
+    background: #9DB0C0;
+    width: 5em;
+    height: 0.5em;
+  }
+
+  .skill-progress-bar-base {
+    background: #FF5335;
+    height: 0.5em;
+  }
+
+  #skill-progress-angular {
+    width: 3.8em;
+  }
+
+  #skill-progress-ionic {
+    width: 3.8em;
+  }
+
+  #skill-progress-illustrator {
+    width: 3em;
+  }
+
+  #skill-progress-android {
+    width: 3em;
+  }
+
+  /*Media queries*/
+
+  @media only screen and (min-width: 320px) {
+    .header {
+      position: sticky;
+    }
+    .content-box{
+      margin-top: 10px;
+    }
+    .content-box-content{
+      padding: 10px;
+    }
+    h2{
+      font-weight: 100;
+    }
+  }
+
+  @media only screen and (min-width: 375px) {}
+
+  @media only screen and (min-width: 425px) {
+    
+  }
+
+  @media only screen and (min-width: 768px) {
+    .header{
+      height: 10em;
+      position: unset;
+    }
+    h2{
+      font-weight: 600;
+    }
+    .content {
+      flex-flow: wrap column;
+      align-items: center;
+    }
+    .content-box-content {
+      justify-content: space-between;
+    }
+    #who-am-i{
+      order: -1;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .content {
+      flex-flow: wrap column;
+    }
+    .content-box-content {
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 150%;
+
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .content-box-content {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 2560px) {
+    body {
+      font-size: 2em;
+    }
+    .header {
+      height: 20em;
+    }
+  }
