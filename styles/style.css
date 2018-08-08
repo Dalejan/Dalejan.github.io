@@ -34,12 +34,10 @@
   }
 .info-icons{
   cursor: pointer;
-
+  padding: 10px;
 }
   .info-icons:hover{
-    box-shadow: 1px 1px 1px 1px #353940;
   }
-
   #info-data {
     flex-direction: row;
     display: none;
