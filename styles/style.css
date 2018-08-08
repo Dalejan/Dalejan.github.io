@@ -28,6 +28,27 @@
     margin-left: 2%;
   }
 
+  #header-info {
+    display: flex;
+    flex-direction: column
+  }
+.info-icons{
+  cursor: pointer;
+
+}
+  .info-icons:hover{
+    box-shadow: 1px 1px 1px 1px #353940;
+  }
+
+  #info-data {
+    flex-direction: row;
+    display: none;
+  }
+
+  .info-icons {
+    width: 40px;
+  }
+
   .footer {
     display: none;
   }
@@ -183,7 +204,6 @@
   @media only screen and (min-width: 320px) {
     .header, .footer {
       position: sticky;
-
     }
     .content-box {
       margin-top: 10px;
@@ -195,15 +215,12 @@
 
   @media only screen and (min-width: 375px) {}
 
-
-
   @media only screen and (min-width: 425px) {
     #photo {
       display: initial;
     }
     .header {
       flex-direction: row;
-
     }
   }
 
@@ -227,7 +244,6 @@
   }
 
   @media only screen and (min-width: 1024px) {
-
     .content {
       flex-flow: wrap column;
       background-image: url("http://dsimple.com/wp-content/uploads/2015/03/network-sphere1.png");
@@ -254,13 +270,16 @@
     .fab {
       display: none;
     }
+    #info-data {
+      display: flex;
+    }
     .footer {
       display: flex;
     }
     #studies {
       border: none
     }
-    #photo{
+    #photo {
       max-width: 200px;
     }
   }
@@ -284,7 +303,6 @@
     .header {
       height: 15em;
     }
-  
     .content-box-content {
       max-width: 1500px;
     }
@@ -297,7 +315,7 @@
     .content {
       background-color: rgba(128, 128, 128, 0.459);
     }
-    #photo{
+    #photo {
       max-width: 15em;
     }
   }

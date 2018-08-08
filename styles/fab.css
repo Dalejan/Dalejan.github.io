@@ -125,3 +125,7 @@
             .icon-material_gh {
               background: url("https://image.flaticon.com/icons/svg/919/919847.svg") center no-repeat;
             }
+
+            .icon-material-tel{
+              background: url("./imges/telephone-logo.svg")
+            }
