@@ -4,9 +4,9 @@
     font-family: Roboto;
   }
 
-  /* --Header--*/
+  /* --Header / footer--*/
 
-  .header {
+  .header, .footer {
     top: 0;
     background-color: #DFE0D4;
     color: #353940;
@@ -18,6 +18,9 @@
     background-image: url("http://dsimple.com/wp-content/uploads/2015/03/network-sphere1.png");
     background-attachment: fixed;
     background-position: center -20px;
+  }
+  .footer{
+    display:none;
   }
 
   /*--Content---*/
@@ -42,6 +45,7 @@
     border-bottom: dotted;
     border-bottom-width: 5px;
     border-color: gainsboro;
+    background-color: white
   }
 
   .content-box-title {
@@ -54,7 +58,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
   }
 
   .content-box-content>p {
@@ -62,10 +65,10 @@
     padding: 20px;
   }
 
-  .text-studies{
+  .text-studies {
     margin: 20px;
   }
-  
+
   /*---Carousel----*/
 
   .mySlides {
@@ -75,21 +78,24 @@
     flex-direction: column;
   }
 
-  .slide-box{
+  .slide-box {
     max-width: 200px;
   }
-  .wrap-slide-content{
+
+  .wrap-slide-content {
     display: flex;
     justify-content: center;
   }
 
-  .img-slide-wrap{
+  .img-slide-wrap {
     max-width: 95%;
     align-self: center;
   }
-  .img-slide-box{
+
+  .img-slide-box {
     max-width: 95%;
   }
+
   /*Carousel animation*/
 
   .w3-animate-zoom {
@@ -106,13 +112,15 @@
   }
 
   /*--works--*/
-  #works{
+
+  #works {
     z-index: -2;
   }
 
-  .wrap-slide-box{
-    display:none
+  .wrap-slide-box {
+    display: none
   }
+
   /*--Skills--*/
 
   .skills {
@@ -164,7 +172,7 @@
   /*Media queries*/
 
   @media only screen and (min-width: 320px) {
-    .header {
+    .header, .footer {
       position: sticky;
       height: 4em;
     }
@@ -172,7 +180,7 @@
       margin-top: 10px;
     }
     h2 {
-      font-weight: 100;
+      font-weight: 400;
     }
 
   }
@@ -204,27 +212,42 @@
   @media only screen and (min-width: 1024px) {
     .content {
       flex-flow: wrap column;
+      background-image: url("http://dsimple.com/wp-content/uploads/2015/03/network-sphere1.png");
+      position: sticky;
+      background-attachment: fixed;
+      padding: 0px;
     }
     .content-box-content {
       flex-wrap: wrap;
       justify-content: center;
+      max-width: 100%;
     }
-    .wrap-slide-box{
-      display:flex;
+    .wrap-slide-box {
+      display: flex;
     }
-    .slide-box{
+    .slide-box {
       display: none
     }
-    .content-box-content {
-      max-width: 800px;
+    .content-box {
+      max-width: 60%;
+      margin-top: 0px;
     }
-    
+    .fab {
+      display: none;
+    }
+    .footer{
+      display: flex;
+    }
   }
 
   @media only screen and (min-width: 1440px) {
     .content-box-content {
       flex-wrap: wrap;
     }
+    .content-box {
+      padding-top: 10px;
+    }
+
   }
 
   @media only screen and (min-width: 2560px) {
@@ -234,7 +257,19 @@
     .header {
       height: 15em;
     }
-    .content-box-content{
+    .footer {
+      top: 0;
+    }
+    .content-box-content {
       max-width: 1500px;
+    }
+    .content-box {
+      max-width: 1500px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      border: none;
+    }
+    .content {
+      background-color: rgba(128, 128, 128, 0.459);
     }
   }
