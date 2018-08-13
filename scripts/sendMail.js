@@ -20,7 +20,7 @@ function sendMail() {
         strJsonForm += "}";
         concatEmails(strJsonForm);
     }
-    //closeModal();
+    closeModal();
 }
 
 function alertError(strError) {
