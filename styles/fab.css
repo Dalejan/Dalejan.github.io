@@ -113,7 +113,7 @@
 
             .icon-material {
               display: inline-block;
-              width: 40px;
+              width: 30px;
               height: 40px;
             }
 
@@ -127,5 +127,9 @@
             }
 
             .icon-material_tel {
-              background: url(../imges/telephone-logo.svg);
+              background: url(../imges/telephone-logo.svg) center no-repeat;
+            }
+
+            .icon-material_mail {
+              background: url(../imges/mail-logo.svg) center no-repeat;
             }

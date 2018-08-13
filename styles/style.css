@@ -1,4 +1,5 @@
   @import "fab.css";
+  @import "modal.css";
   * {
     margin: 0px 0px;
     font-family: Roboto;
@@ -32,12 +33,13 @@
     display: flex;
     flex-direction: column
   }
-.info-icons{
-  cursor: pointer;
-  padding: 10px;
-}
-  .info-icons:hover{
+
+  .info-icons {
+    cursor: pointer;
+    padding: 10px;
   }
+
+
   #info-data {
     flex-direction: row;
     display: none;
@@ -97,16 +99,17 @@
     margin: 20px;
   }
 
-  .text-langs{
+  .text-langs {
     margin-right: 20px;
-    margin-left: 20px;  
+    margin-left: 20px;
     display: flex;
     align-items: center;
     height: 100px;
     justify-content: space-between;
     flex-direction: column;
   }
-  .langs-icons{
+
+  .langs-icons {
     width: 3em;
   }
 
@@ -222,7 +225,7 @@
     h2 {
       font-weight: 400;
     }
-    .text-langs{
+    .text-langs {
       flex-direction: row;
       width: 200px;
     }
@@ -237,11 +240,10 @@
     .header {
       flex-direction: row;
     }
-    .text-langs{
+    .text-langs {
       flex-direction: column;
       width: unset;
     }
-    
   }
 
   @media only screen and (min-width: 768px) {
