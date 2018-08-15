@@ -32,7 +32,7 @@ function concatEmails(objMail) {
     arrAllMyEmails.myMails.push(objMail); //concatena los correos 
 
     //Envía correo
-    xhr.open("POST", 'http://localhost:8000/api/email', true);
+    xhr.open("POST", 'https://us-central1-cvproject-213318.cloudfunctions.net/sendEmail', true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.send("name=" + "" + objMail.name + "" + "&" + "mail=" + "" + objMail.mail + "" + "&" + "country=" + "" + objMail.country + "" + "&" + "text=" + "" + objMail.text + "");
 
